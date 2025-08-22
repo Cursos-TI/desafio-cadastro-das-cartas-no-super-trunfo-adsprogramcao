@@ -43,9 +43,11 @@ int main() {
     printf("Populacao: %d\nArea: %f\n", populacao1, area1);
     printf("PIB: %f\nPontos Turisticos: %d\n", pib1, pontosturisticos1);
    
+    //Operação para calcular a densidade populacional e o PIB per Capita da primeira carta
     densidadepopulacional1 = populacao1 / area1;
     pibpercapita1 = pib1 / populacao1;
 
+    //Dados do cálculo impresso
     printf("Densidade Populacional: %.2f\n", densidadepopulacional1);
     printf("PIB per Capita: %.2f\n", pibpercapita1);
 
@@ -78,9 +80,11 @@ int main() {
     printf("Populacao: %d\nArea: %f\n", populacao2, area2);
     printf("PIB: %f\nPontos Turisticos: %d\n", pib2, pontosturisticos2);
 
+    //Operação para calcular a densidade populacional e o PIB per Capita da segunda carta
     densidadepopulacional2 = populacao2 / area2;
     pibpercapita2 = pib2 / populacao2;
 
+    //Dados do cálculo impresso
     printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
     printf("PIB per Capita: %.2f\n", pibpercapita2);
     
