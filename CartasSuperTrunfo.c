@@ -10,13 +10,16 @@ int main() {
     char estado1 [20], estado2 [20];
     char codigo1 [4] = "A01", codigo2 [4] = "A02"; //3 posições úteis + uma posição para o terminador "\0"
     char cidade1 [20], cidade2 [20];
+    //Adicionei 4 variáveis do nível aventureiro
+    float densidadepopulacional1, densidadepopulacional2;
+    float pibpercapita1, pibpercapita2;
     
     //Inserir dados da primeira carta
     printf("Carta 1 \n");
     printf("Escolha o estado: ");
     scanf("%s", estado1);
 
-    printf("Digite o codigo: ");
+    printf("Digite a primeira letra do estado seguida do número 01: ");
     scanf("%s", codigo1); 
     
     printf("Escolha a cidade: ");
@@ -39,13 +42,19 @@ int main() {
     printf("Codigo: %s\nCidade: %s\n", codigo1, cidade1);
     printf("Populacao: %d\nArea: %f\n", populacao1, area1);
     printf("PIB: %f\nPontos Turisticos: %d\n", pib1, pontosturisticos1);
+   
+    densidadepopulacional1 = populacao1 / area1;
+    pibpercapita1 = pib1 / populacao1;
+
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional1);
+    printf("PIB per Capita: %.2f\n", pibpercapita1);
 
     //Inserir dados da segunda carta
     printf("Carta 2 \n");
     printf("Escolha o estado: ");
     scanf("%s", estado2);
 
-    printf("Digite o codigo: ");
+    printf("Digite a primeira letra do estado seguida do número 02: ");
     scanf("%s", codigo2); 
     
     printf("Escolha a cidade: ");
@@ -67,7 +76,13 @@ int main() {
     printf("carta 2\nEstado: %s\n", estado2);
     printf("Codigo: %s\nCidade: %s\n", codigo2, cidade2);
     printf("Populacao: %d\nArea: %f\n", populacao2, area2);
-    printf("PIB: %f\nPontos Turisticos: %d", pib2, pontosturisticos2);
+    printf("PIB: %f\nPontos Turisticos: %d\n", pib2, pontosturisticos2);
+
+    densidadepopulacional2 = populacao2 / area2;
+    pibpercapita2 = pib2 / populacao2;
+
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
+    printf("PIB per Capita: %.2f\n", pibpercapita2);
     
 
     return 0;
