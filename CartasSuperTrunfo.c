@@ -13,6 +13,13 @@ int main() {
     //Adicionei 4 variáveis do nível aventureiro
     float densidadepopulacional1, densidadepopulacional2;
     float pibpercapita1, pibpercapita2;
+
+    // nível mestre
+    float inversodensidadepopulacional1, inversodensidadepopulacional2;
+
+    float superpoder1, superpoder2;
+
+    int populacao, area, pib, pontosturisticos, densidadepopulacional, pibpercapita, superpoder;
     
     //Inserir dados da primeira carta
     printf("Carta 1 \n");
@@ -51,6 +58,14 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidadepopulacional1);
     printf("PIB per Capita: %.2f\n", pibpercapita1);
 
+     // Nível mestre
+    // Cálculo do super poder
+    inversodensidadepopulacional1 = (float)1 / densidadepopulacional1; // Quanto menor a densidade, maior o poder
+    superpoder1 = (float)populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 + inversodensidadepopulacional1;
+
+    // resultado do super poder
+    printf("O super poder da carta 1 é: %f\n", superpoder1);
+
     //Inserir dados da segunda carta
     printf("Carta 2 \n");
     printf("Escolha o estado: ");
@@ -88,6 +103,36 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
     printf("PIB per Capita: %.2f\n", pibpercapita2);
     
+    // Nível mestre
+    // Cálculo do super poder
+    inversodensidadepopulacional2 = (float)1 / densidadepopulacional1; // Quanto menor a densidade, maior o poder
+    superpoder2 = (float)populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + inversodensidadepopulacional2;
+
+    // resultado do super poder
+    printf("O super poder da carta 2 é: %f\n", superpoder2);
+
+    // Nível mestre
+    // Comparação das cartas
+    populacao = populacao1 > populacao2;
+    area = area1 > area2;
+    pib = pib1 > pib2;
+    pontosturisticos = pontosturisticos1 > pontosturisticos2;
+    densidadepopulacional = densidadepopulacional1 < densidadepopulacional2;//Densidade de menor valor vence
+    pibpercapita = pibpercapita1 > pibpercapita2;
+    superpoder = superpoder1 > superpoder2;
+
+    // imprimir resultado das comparações
+    printf("*** Comparação de Cartas***\n");
+    printf("População: %d\n", populacao);
+    printf("Área: %d\n", area);
+    printf("PIB: %d\n", pib);
+    printf("Pontos turísticos: %d\n", pontosturisticos);
+    printf("Densidade populacional: %d\n", densidadepopulacional);
+    printf("PIB per Capita: %d\n", pibpercapita);
+    printf("Super poder: %d\n", superpoder);
+
+
+    printf("Se o valor de cada variável for 1 - a carta 1 venceu, se o valor for 0 - a carta 2 venceu");
 
     return 0;
 }
