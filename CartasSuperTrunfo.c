@@ -131,8 +131,23 @@ int main() {
     printf("PIB per Capita: %d\n", pibpercapita);
     printf("Super poder: %d\n", superpoder);
 
+    /* if (populacao = 1){
+      printf("População: \n");
+      printf("Carta 1 venceu! \n");}
+    else{
+      printf("Carta 2 venceu!\n");}
+    if (area = 0){
+      printf("Área: \n");
+      printf("Carta 1 venceu!\n");}
+    else{
+      printf("Carta 2 venceu!\n");}
+    {
+        /* code */
+    }
+    
 
-    printf("Se o valor de cada variável for 1 - a carta 1 venceu, se o valor for 0 - a carta 2 venceu");
+
+    
 
     return 0;
 }
