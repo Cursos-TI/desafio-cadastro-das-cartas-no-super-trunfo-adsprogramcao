@@ -131,19 +131,21 @@ int main() {
     printf("PIB per Capita: %d\n", pibpercapita);
     printf("Super poder: %d\n", superpoder);
 
-    /* if (populacao = 1){
+    /*if (populacao == 1){
       printf("População: \n");
-      printf("Carta 1 venceu! \n");}
-    else{
-      printf("Carta 2 venceu!\n");}
-    if (area = 0){
+      printf("Carta 1 venceu! \n");
+    }else{
       printf("Área: \n");
-      printf("Carta 1 venceu!\n");}
-    else{
-      printf("Carta 2 venceu!\n");}
-    {
-        /* code */
+      printf("Carta 2 venceu!\n");
     }
+    if (area == 1){
+      printf("Área: \n");
+      printf("Carta 1 venceu!\n");//se a condição for verdadeira
+    }else {
+      printf("Área: \n");
+      printf("Carta 2 venceu!\n");//se a condição for falsa
+    }
+    */
     
 
 
